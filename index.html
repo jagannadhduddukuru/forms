@@ -8,50 +8,69 @@
 </head>
 
 <body>
+    <center><img src="./logo.png" alt="logo" width="50" height="50"></center>
     <center>
         <h1>APPLICATION FORM</h1>
     </center>
     <fieldset>
-        <legend>DETAILS</legend>
-        <form>
+        <legend><mark>DETAILS</mark></legend>
+        <form action="./submit.html">
             <label for="Name : ">Name : </label>
             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            <input type="text">
+            <input type="text" required>
             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
             <label for="Father Name">Father Name : </label>
             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            <input type="text"><br><br>
+            <input type="text" required><br><br>
             <label for="email">Email : </label>
             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            <input type="email">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <input type="email" required>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
             <label for="adharr number">Aadhar number :</label>
             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            <input type="number"><br><br>
+            <input type="number" required><br><br>
             <label for="date of birth">Date Of Birth :</label>
             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            <input type="date"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <input type="date" required> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
             <label for="gender">Gender : </label>
             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            <input type="radio" name="gender" value="male">male
-            <input type="radio" name="gender" value="female">Female <br><br>
+            <input type="radio" name="gender" value="male" required>male
+            <input type="radio" name="gender" value="female" required>Female <br><br>
             <label for="whatapp">whatapp no : </label>
-            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            <input type="number">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            <label for="skills">Skills :</label>
-            <input type="checkbox" name="python">Python
-            <input type="checkbox" name="java">java <br><br>
-            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp
+            <input type="number" required>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <label for="apllicant address">Applicant Address : </label> &nbsp&nbsp
+            <textarea name="applicant address"></textarea><br><br>
+            <label for="district">District : </label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <select name="district" id="district">
 
-            <button type="submit">Submit</button>
-
+                <option value="HYDERABAD">HYDERABAD</option>
+            </select>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <label for="Mandal">Mandal :</label>&nbsp&nbsp
+            <select name="mandal" id="mandal">
+                <option value="HYDERABAD">HYDERABAD</option>
+            </select><br><br>
+            <label for="village">Village :</label> &nbsp&nbsp&nbsp&nbsp&nbsp
+            <select name="village" id="village">
+                <option value="village">HYDERABAD</option>
+            </select> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <label for="pincode">Pincode : </label>
+            <input type="text" title="enter valid pincode" pattern="5[1-9]{5}"><br><br>
+            <label for="mode of payment">Payment mode :</label>&nbsp&nbsp&nbsp
+            <select name="payment" id="payment">
+                <option value="gpay">Gpay</option>
+                <option value="paytm">Paytm</option>
+                <option value="upi id">Upi id</option>
+            </select><br><br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <input type="submit" value="submit">
         </form>
+
     </fieldset>
 </body>
 
